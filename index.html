@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Redirect</title>
+</head>
+<body>
+    <script>
+        // declare the variable
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+        let targetUrlList = ["https://www.surveycake.com/s/1Zo6x", "https://www.surveycake.com/s/pMean", "https://www.surveycake.com/s/Ba023", "https://www.surveycake.com/s/ablL4"];
+
+        let ans = getRandomInt(100);
+        // console.log(ans);
+
+        if(ans < 25){
+            location.href = "https://www.surveycake.com/s/1Zo6x";
+        } 
+        else if(ans >= 25 && ans < 50){
+            location.href = "https://www.surveycake.com/s/pMean";
+        }
+        else if(ans >= 50 && ans < 75){
+            location.href = "https://www.surveycake.com/s/Ba023";
+        }
+        else {
+            location.href = "https://www.surveycake.com/s/ablL4";
+        }
+    </script>
+</body>
+</html>
